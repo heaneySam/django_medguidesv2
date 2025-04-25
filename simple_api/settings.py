@@ -33,6 +33,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "cascadeprojects-django-1",
     "159.65.53.105",
+    "django-medguidesv2.onrender.com",
 ]
 
 
