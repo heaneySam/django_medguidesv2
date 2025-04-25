@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "cascadeprojects-django-1",
+    "159.65.53.105",
 ]
 
 

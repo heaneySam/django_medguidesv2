@@ -18,4 +18,5 @@ COPY . .
 COPY wait-for-db.sh /wait-for-db.sh
 RUN chmod +x /wait-for-db.sh
 
-CMD ["/wait-for-db.sh", "python", "manage.py", "runserver", "0.0.0.0:8000"]
+# Use runserver for dev, gunicorn for prod based on DJANGO_DEV env var
+CMD ["/wait-for-db.sh", "sh", "-c", "if [ '$DJANGO_DEV' = 'true' ]; then python manage.py runserver 0.0.0.0:8000; else gunicorn simple_api.wsgi:application --bind 0.0.0.0:8000; fi"]
