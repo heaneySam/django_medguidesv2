@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+media/
+staticfiles/
+
+# Environment
+.env
+*.env
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Docker
+*.pid
+
+# Pytest
+.cache/
+
+# Coverage
+htmlcov/
+.coverage
+.tox/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# Other
+*.pot
+*.mo
+
+# pipenv
+Pipfile.lock
+
+# celery
+celerybeat-schedule
+celerybeat.pid
